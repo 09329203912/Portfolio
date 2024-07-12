@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://kit.fontawesome.com/fcae5f02a5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!------------------------- MENU -------------------------->
+  <div id="container">
+    <div class="contain">
+      <nav>
+        <img src="logos.png" alt="logo" class="logos">
+        <ul id="sidemenu">
+          <li><a href="#container">Hero</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="text">
+        <p class="alex">Web Developer</p>
+        <h1>Hi, <span>I'm Luis Liam Malana</span></h1>
+        <h2>I'm a BSIT Student From<br>Dalubhasaang Lungsod ng Lucena</h2>
+      </div>
+    </div>
+  </div>
+  <!----------------------- about------------------------->
+  <div id="about">
+    <div class="contains">
+      <div class="row">
+        <div class="about1">
+          <img class="ako" src="walka.jpg" alt="user">
+        </div>
+        <div class="about2">
+          <h1 class="sub">About Me</h1>
+          <p>Hi, I'm Luis Malana, an Information Technology student at Dalubhasaan ng Lungsod ng Lucena. 
+            I have a solid foundation in programming, database management, network security, 
+            and software development, with proficiency in Java, Python, and C++. I'm particularly 
+            interested in Web developing]
+            and enjoy staying current with the latest tech trends.<br><br>My coursework and projects 
+            have enhanced my problem-solving and analytical skills, and I've collaborated on several 
+            group projects, honing my teamwork and communication abilities. Outside of academics, I'm an avid 
+            in web developing, which helps me stay 
+            well-rounded.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('hobby')">Hobby</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Coding</span><br>HTML/Python</li>
+              <li><span>HTML</span><br>Designning</li>
+              <li><span>App Development</span><br>Building Android</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="hobby">
+            <ul>
+              <li><span>Coding</span><br>HTML/CSS/Python</li>
+              <li><span>Gaming</span><br>Online Games</li>
+              <li><span>Sports</span><br>Badminton</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022-Currrent</span><br>Dalubhasaan ng Lungsod ng Lucena</li>
+              <li><span>2018-2022</span><br>Luenca City Nationa HighSchool</li>
+              <li><span>2014-2018</span><br>Luenca East V</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------------- Works -------------------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub">My Works</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="work-1.PNG" alt="Work1">
+          <div class="layer">
+            <h3>Online Resume</h3>
+            <p>This is my first work as an web developer which
+            is the online resume</p>
+            <a href="https://09329203912.github.io/online-resume/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work-2.PNG" alt="Work2">
+          <div class="layer">
+            <h3>Online Calculator</h3>
+            <p>This is my second work as an web developer which
+            is the online Calculator</p>
+            <a href="https://09329203912.github.io/ipt101-calculator-app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work-3.PNG" alt="Work3">
+          <div class="layer">
+            <h3>Online Rock-Paper-Scissor</h3>
+            <p>This is my thid work as an web developer which
+            is the online Rock-Paper-Scissor</p>
+            <a href="https://09329203912.github.io/rock-paper-scissor/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/09329203912" class="btn">See more</a>
+    </div>
+  </div>
+  <!---------------------------- Contact ------------------------------>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contack-left">
+          <h1 class="sub">Contact Me</h1>
+          <p> <i class="fa-solid fa-paper-plane"></i>liammalana12@gmail.com</p>
+          <p> <i class="fa-solid fa-phone"></i>09777705053</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/luismalana02"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.instagram.com/luis_maln/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@liam_malana"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+          <a href="#" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contack-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name:" required>
+            <input type="text" name="Email" placeholder="Your Email:" required>
+            <textarea name="Message" rows="6" placeholder="Your Message:"></textarea> 
+            <button type="submit" class="btn btn2">Submit</button> 
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ Luis. <i class="fa-solid fa-copyright"></i> Tutorial by GreatStack/How to Web Dev</p>
+    </div>
+  </div>
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+  <!------------------- SIDEMENU ----------------------------->
+  <script>
+    var Sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      Sidemenu.style.right = "0"
+    }
+    function closemenu(){
+      Sidemenu.style.right = "-200px"
+    }
+  </script>
+
+</body>
+</html>
